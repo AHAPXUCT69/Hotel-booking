@@ -367,6 +367,10 @@ template {
   content: "/";
   margin-right: 4px;
 }
+.breadcrumb-list__link {
+  text-decoration: none;
+  color: inherit;
+}
 
 .hotel {
   padding-top: 23px;
@@ -607,6 +611,10 @@ template {
   }
 }
 @media (max-width: 576px) {
+  .container {
+    width: 88%;
+  }
+
   .logo {
     width: 99px;
   }
