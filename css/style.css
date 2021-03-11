@@ -762,8 +762,12 @@ template {
   right: 0;
   min-width: 65px;
   height: 100%;
-  border: none;
   background-color: #EC1F46;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  border: none;
   color: #ffffff;
 }
 
@@ -915,7 +919,8 @@ template {
   }
 }
 @media (max-width: 576px) {
-  .container {
+  .container,
+.newsletter-wrapper {
     width: 88%;
   }
 
@@ -933,6 +938,14 @@ template {
 
   .newsletter {
     padding: 76px 0 83px 0;
+  }
+  .newsletter-title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .newsletter-title__strong {
+    font-size: 30px;
+    line-height: 38px;
   }
   .newsletter__title {
     margin-bottom: 37px;
