@@ -770,6 +770,113 @@ template {
   color: #ffffff;
 }
 
+.reviews {
+  padding: 40px 0 70px 0;
+}
+.reviews-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 38px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 70px;
+}
+.reviews-slider__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 730px;
+  margin: 45px auto 0;
+  padding: 0 62px 30px;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+.reviews-slider__item::before {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 62px;
+  width: 70px;
+  height: 47px;
+  background-image: url(../img/quote-left.svg);
+  background-repeat: no-repeat;
+}
+.reviews-slider__item::after {
+  content: "";
+  position: absolute;
+  top: 118px;
+  right: 62px;
+  width: 70px;
+  height: 47px;
+  background-image: url(../img/quote-right.svg);
+  background-repeat: no-repeat;
+}
+.reviews-slider__button {
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: 10px;
+  background-position: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transform: translateY(-50%);
+  z-index: 99;
+}
+.reviews-slider__button--prev {
+  background-image: url(../img/arrow-prev-secondary.svg);
+  left: 0;
+}
+.reviews-slider__button--next {
+  background-image: url(../img/arrow-next-secondary.svg);
+  right: 0;
+}
+.reviews-slider__profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -45px;
+  margin-bottom: 30px;
+}
+.reviews-slider__avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.reviews-slider__username {
+  margin-bottom: 10px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #EC1F46;
+}
+.reviews-slider__date {
+  margin-bottom: 4px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 13px;
+}
+.reviews-slider__rating {
+  display: flex;
+  align-items: center;
+}
+.reviews-slider__text {
+  max-width: 537px;
+  margin: auto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 160%;
+  text-align: justify;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
