@@ -903,6 +903,9 @@ template {
   .map {
     width: 100%;
   }
+  .map__iframe {
+    width: 100%;
+  }
 
   .newsletter-wrapper {
     max-width: 576px;
