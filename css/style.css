@@ -511,6 +511,7 @@ template {
   position: relative;
   width: 728px;
   height: 450px;
+  margin: 0;
 }
 .hotel-slider__image {
   width: 100%;
