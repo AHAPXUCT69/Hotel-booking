@@ -514,8 +514,9 @@ template {
   margin: 0;
 }
 .hotel-slider__image {
-  width: 100%;
   height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 .hotel-slider__item {
   width: 100%;
@@ -1145,6 +1146,7 @@ template {
   .reviews-slider__button--next {
     right: 50%;
     margin-right: -65px;
+    transform: translate(50%, 0);
   }
 
   .activities {
