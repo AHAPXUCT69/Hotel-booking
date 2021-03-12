@@ -696,6 +696,16 @@ template {
 .newsletter {
   position: relative;
   padding: 98px 0 87px 0;
+}
+.newsletter::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
   background-color: rgba(10, 34, 61, 0.8);
 }
 .newsletter-wrapper {
@@ -744,7 +754,7 @@ template {
   position: absolute;
   top: 0;
   right: 0;
-  min-width: 65px;
+  width: 65px;
   height: 100%;
   background-color: #EC1F46;
   font-style: normal;
@@ -753,6 +763,9 @@ template {
   line-height: 15px;
   border: none;
   color: #ffffff;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .reviews {
@@ -857,12 +870,13 @@ template {
 }
 .reviews-slider__text {
   max-width: 537px;
+  max-height: 114px;
   margin: auto;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 160%;
-  text-align: justify;
+  overflow: auto;
 }
 
 @media (max-width: 1200px) {
@@ -1025,6 +1039,9 @@ template {
   .reviews-slider__item::after, .reviews-slider__item::before {
     display: none;
   }
+  .reviews-slider__text {
+    max-height: 133px;
+  }
   .reviews-slider__button {
     top: 32px;
   }
@@ -1075,8 +1092,16 @@ template {
     width: 100%;
   }
 
+  .reviews {
+    padding-bottom: 40px;
+  }
   .reviews-title {
+    margin-top: 0;
+    margin-bottom: 40px;
     font-size: 18px;
     line-height: 23px;
+  }
+  .reviews-slider__text {
+    max-height: 266px;
   }
 }/*# sourceMappingURL=style.css.map */
