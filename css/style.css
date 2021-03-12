@@ -870,7 +870,7 @@ template {
 }
 .reviews-slider__text {
   max-width: 537px;
-  max-height: 114px;
+  max-height: 120px;
   margin: auto;
   font-style: normal;
   font-weight: normal;
@@ -947,6 +947,9 @@ template {
 
   .reviews-slider__item {
     max-width: 580px;
+  }
+  .reviews-slider__text {
+    max-height: 140px;
   }
 }
 @media (max-width: 768px) {
@@ -1039,9 +1042,6 @@ template {
   .reviews-slider__item::after, .reviews-slider__item::before {
     display: none;
   }
-  .reviews-slider__text {
-    max-height: 133px;
-  }
   .reviews-slider__button {
     top: 32px;
   }
@@ -1102,6 +1102,6 @@ template {
     line-height: 23px;
   }
   .reviews-slider__text {
-    max-height: 266px;
+    max-height: 270px;
   }
 }/*# sourceMappingURL=style.css.map */
