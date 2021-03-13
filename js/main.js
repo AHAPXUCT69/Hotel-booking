@@ -40,7 +40,7 @@ const reviewsSlider = new Swiper('.reviews-slider', {
 
 // Parallax
 $('.newsletter').parallax({
-  imageSrc: '../img/newsletter-bg.jpg',
+  imageSrc: 'img/newsletter-bg.jpg',
   naturalWidth: 2880,
   naturalHeight: 1913,
   speed: 0.4,
