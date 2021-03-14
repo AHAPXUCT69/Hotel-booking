@@ -52,10 +52,12 @@
     width: 340px
   .packages
     &-wrapper
-      grid-template-rows: 500px 500px 500px
+      grid-template-rows: 500px 1fr 1fr
       grid-template-columns: 1fr 1fr
+  .package
     &__features
-      margin-bottom: 14px
+      &--lg
+        margin-bottom: 50px
   .reviews
     &-slider
       &__item
@@ -128,7 +130,7 @@
       width: 100%
   .packages
     &-wrapper
-      grid-template-rows: 500px 1fr 1fr
+      grid-template-rows: 1fr 453px 453px
       gap: 20px
     &__title
       margin-bottom: 30px
@@ -147,17 +149,19 @@
       padding-top: 10px
       padding-bottom: 20px
     &__name
-      margin-bottom: 10px
+      margin-bottom: 20px
     &__description
       margin-bottom: 20px
       font-size: 13px
       line-height: 1.2
     &__features
-      margin-bottom: 10px
+      margin-bottom: 20px
       &--lg
         display: flex
         justify-content: space-between
-        margin-bottom: 10px
+        margin-bottom: 30px
+    &__parameter
+      margin-bottom: 4px
     &__icon
       margin-right: 4px
     &__booking
@@ -176,12 +180,12 @@
         &::after
           content: '$ 10,500'
           position: absolute
-          top: -25px
-          left: 0px
+          top: 0px
+          left: -80px
           font-style: normal
           font-weight: normal
-          font-size: 14px
-          line-height: 18px
+          font-size: 16px
+          line-height: 20px
           text-decoration-line: line-through
     &__button
       padding: 5px 10px
@@ -236,8 +240,10 @@
       grid-column-end: 2
     &__information
       padding-top: 30px
+      padding-left: 21px
       &--lg
         padding-top: 10px
+        padding-left: 21px
     &__description
       display: none
     &__features
@@ -292,10 +298,10 @@
       grid-template-columns: 1fr
       grid-template-rows: repeat(5, 480px)
   .package
+    &__name
+      margin-bottom: 20px
     &__features
       display: block
-      margin-bottom: 0px
+      margin-bottom: 16px
       &--lg
-        margin-bottom: 0px
-    &__price
-      font-size: 18px
+        margin-bottom: 15px

@@ -710,7 +710,7 @@ template {
 }
 .packages-wrapper {
   display: grid;
-  grid-template-rows: 500px 500px;
+  grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
 }
@@ -754,7 +754,7 @@ template {
 }
 .package__image--lg {
   width: 366px;
-  height: 500px;
+  height: auto;
 }
 .package__information {
   padding: 30px 21px 25px 32px;
@@ -792,7 +792,7 @@ template {
   margin-bottom: 24px;
 }
 .package__features--lg {
-  margin-bottom: 37px;
+  margin-bottom: 35px;
 }
 .package__parameter {
   margin-bottom: 11px;
@@ -1186,11 +1186,12 @@ template {
   }
 
   .packages-wrapper {
-    grid-template-rows: 500px 500px 500px;
+    grid-template-rows: 500px 1fr 1fr;
     grid-template-columns: 1fr 1fr;
   }
-  .packages__features {
-    margin-bottom: 14px;
+
+  .package__features--lg {
+    margin-bottom: 50px;
   }
 
   .reviews-slider__item {
@@ -1291,7 +1292,7 @@ template {
   }
 
   .packages-wrapper {
-    grid-template-rows: 500px 1fr 1fr;
+    grid-template-rows: 1fr 453px 453px;
     gap: 20px;
   }
   .packages__title {
@@ -1316,7 +1317,7 @@ template {
     padding-bottom: 20px;
   }
   .package__name {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   .package__description {
     margin-bottom: 20px;
@@ -1324,12 +1325,15 @@ template {
     line-height: 1.2;
   }
   .package__features {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   .package__features--lg {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+  }
+  .package__parameter {
+    margin-bottom: 4px;
   }
   .package__icon {
     margin-right: 4px;
@@ -1352,12 +1356,12 @@ template {
   .package__price--lg::after {
     content: "$ 10,500";
     position: absolute;
-    top: -25px;
-    left: 0px;
+    top: 0px;
+    left: -80px;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 16px;
+    line-height: 20px;
     text-decoration-line: line-through;
   }
   .package__button {
@@ -1432,9 +1436,11 @@ template {
   }
   .package__information {
     padding-top: 30px;
+    padding-left: 21px;
   }
   .package__information--lg {
     padding-top: 10px;
+    padding-left: 21px;
   }
   .package__description {
     display: none;
@@ -1511,14 +1517,14 @@ template {
     grid-template-rows: repeat(5, 480px);
   }
 
+  .package__name {
+    margin-bottom: 20px;
+  }
   .package__features {
     display: block;
-    margin-bottom: 0px;
+    margin-bottom: 16px;
   }
   .package__features--lg {
-    margin-bottom: 0px;
-  }
-  .package__price {
-    font-size: 18px;
+    margin-bottom: 15px;
   }
 }/*# sourceMappingURL=style.css.map */
