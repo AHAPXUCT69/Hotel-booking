@@ -13,6 +13,9 @@
   .card
     width: 230px
     height: 230px
+  .package
+    &__description
+      font-size: 12px
 @media (max-width: 992px)
   .container,
   .newsletter-wrapper
@@ -47,6 +50,12 @@
     width: 340px
   .map
     width: 340px
+  .packages
+    &-wrapper
+      grid-template-rows: 500px 500px 500px
+      grid-template-columns: 1fr 1fr
+    &__features
+      margin-bottom: 14px
   .reviews
     &-slider
       &__item
@@ -56,7 +65,7 @@
   .activities
     &-wrapper
       flex-wrap: wrap
-      flex-direction: space-between
+      justify-content: space-between
     &__card
       margin-bottom: 20px
   .card
@@ -117,6 +126,67 @@
     width: 100%
     &__iframe
       width: 100%
+  .packages
+    &-wrapper
+      grid-template-rows: 500px 1fr 1fr
+      gap: 20px
+    &__title
+      margin-bottom: 30px
+  .package
+    &--lg
+      flex-direction: column
+    &__photo
+      max-width: 100%
+      &--lg
+        height: 250px
+    &__image
+      &--lg
+        width: 100%
+        height: 100%
+    &__information
+      padding-top: 10px
+      padding-bottom: 20px
+    &__name
+      margin-bottom: 10px
+    &__description
+      margin-bottom: 20px
+      font-size: 13px
+      line-height: 1.2
+    &__features
+      margin-bottom: 10px
+      &--lg
+        display: flex
+        justify-content: space-between
+        margin-bottom: 10px
+    &__icon
+      margin-right: 4px
+    &__booking
+      &--lg
+        justify-content: flex-end
+    &__old-price
+      &--lg
+        display: none
+    &__price
+      font-size: 18px
+      line-height: 22px
+      &--lg
+        position: relative
+        margin-right: 20px
+        font-size: 24px
+        &::after
+          content: '$ 10,500'
+          position: absolute
+          top: -25px
+          left: 0px
+          font-style: normal
+          font-weight: normal
+          font-size: 14px
+          line-height: 18px
+          text-decoration-line: line-through
+    &__button
+      padding: 5px 10px
+      &--lg
+        padding: 10px 26px
   .newsletter
     &-wrapper
       max-width: 576px
@@ -156,6 +226,39 @@
       height: 250px
     &__slider
       margin-bottom: 20px
+  .packages
+    &-wrapper
+      grid-template-columns: 1fr
+      grid-template-rows: repeat(5, 450px)
+  .package
+    &--lg
+      grid-column-start: 1
+      grid-column-end: 2
+    &__information
+      padding-top: 30px
+      &--lg
+        padding-top: 10px
+    &__description
+      display: none
+    &__features
+      display: flex
+      justify-content: space-between
+      margin-bottom: 27px
+      &--lg
+        margin-bottom: 25px
+    &__booking
+      justify-content: space-between
+    &__old-price
+      display: block
+    &__price
+      font-size: 24px
+      line-height: 30px
+      margin-right: 20px
+      &--lg
+        &::after
+          content: ""
+    &__button
+      padding: 10px 26px
   .newsletter
     padding: 76px 0 83px 0
     &-title
@@ -183,3 +286,16 @@
       flex-direction: column
   .card
     width: 100%
+@media (max-width: 476px)
+  .packages
+    &-wrapper
+      grid-template-columns: 1fr
+      grid-template-rows: repeat(5, 480px)
+  .package
+    &__features
+      display: block
+      margin-bottom: 0px
+      &--lg
+        margin-bottom: 0px
+    &__price
+      font-size: 18px
