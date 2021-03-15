@@ -759,7 +759,7 @@ quest"
             alt="Logo: Best Tour Plan"
             class="logo footer__logo"
           />
-          <div class="footer__list">
+          <div class="footer__list footer__categories">
             <h3 class="footer__title">ALL CATEGORIES</h3>
             <ul class="footer__ul">
               <li class="footer__item">
@@ -789,9 +789,12 @@ quest"
             </ul>
           </div>
           <!-- /.footer__list -->
-          <div class="footer__list">
+          <div class="footer__list footer__information">
             <h3 class="footer__title">ADDITIONAL INFORMATION</h3>
             <ul class="footer__ul">
+              <li class="footer__item">
+                <a href="#" class="footer__link">About Us</a>
+              </li>
               <li class="footer__item">
                 <a href="#" class="footer__link">Contact Us</a>
               </li>
@@ -813,31 +816,22 @@ quest"
           </div>
           <!-- /.footer__list -->
           <div class="footer__social-network">
-            <h3 class="footer__tilte">Social Network</h3>
+            <h3 class="footer__title footer__title--inline">Social Network</h3>
             <div class="footer__social-links">
               <a href="#" class="footer__link"
-                ><img
-                  src="img/fb.svg"
-                  alt="Icon: facebook"
-                  class="footer___icon"
+                ><img src="img/fb.svg" alt="Icon: facebook"
               /></a>
               <a href="#" class="footer__link"
-                ><img
-                  src="img/yt.svg"
-                  alt="Icon: youtube"
-                  class="footer___icon"
+                ><img src="img/yt.svg" alt="Icon: youtube"
               /></a>
               <a href="#" class="footer__link"
-                ><img
-                  src="img/inst.svg"
-                  alt="Icon: instagram"
-                  class="footer___icon"
+                ><img src="img/inst.svg" alt="Icon: instagram"
               /></a>
             </div>
             <!-- /.footer__social-links -->
           </div>
           <!-- /.footer__social-network -->
-          <div class="footer__list">
+          <div class="footer__list footer__legal">
             <h3 class="footer__title">LEGAL INFORMATION</h3>
             <ul class="footer__ul">
               <li class="footer__item">
@@ -853,44 +847,50 @@ quest"
           </div>
           <!-- /.footer__list -->
           <div class="footer__contact-details">
-            <h3 class="footer__title">Contact Details</h3>
+            <h3 class="footer__title footer__title--mb-3">Contact Details</h3>
             <p class="footer__text">
               Feel free to contact us by phone, email or by our contact form
             </p>
             <ul class="footer__ul">
-              <li class="footer__item">
-                <img
-                  src="img/map.svg"
-                  alt="Icon: map-marker"
-                  class="footer__icon"
-                />
+              <li class="footer__item footer__item--mb-2">
+                <div class="footer__icon-wrapper">
+                  <img
+                    src="img/map.svg"
+                    alt="Icon: map-marker"
+                    class="footer__icon"
+                  />
+                </div>
                 9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United
                 States
               </li>
-              <li class="footer__item">
-                <img
-                  src="img/contact-phone-call.svg"
-                  alt="Icon: phone"
-                  class="footer__icon"
-                />
+              <li class="footer__item footer__item--mb-2">
+                <div class="footer__icon-wrapper">
+                  <img
+                    src="img/contact-phone-call.svg"
+                    alt="Icon: phone"
+                    class="footer__icon"
+                  />
+                </div>
                 Tel (business hours) : 269 1500<br />
                 Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00
                 pm)<br />
                 Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
               </li>
-              <li class="footer__item">
-                <img
-                  src="img/e-mail.svg"
-                  alt="Icon: e-mail"
-                  class="footer__icon"
-                />
+              <li class="footer__item footer__item--mb-2">
+                <div class="footer__icon-wrapper">
+                  <img
+                    src="img/e-mail.svg"
+                    alt="Icon: e-mail"
+                    class="footer__icon"
+                  />
+                </div>
                 cherly.lawson@example.com
               </li>
             </ul>
           </div>
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
-            <h3 class="footer__title">Send us a message</h3>
+            <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
             <div class="footer__form">
               <input
                 type="text"
@@ -905,7 +905,7 @@ quest"
               <textarea
                 class="footer__message"
                 cols="30"
-                rows="10"
+                rows="4"
                 placeholder="Message"
               ></textarea>
               <button class="button footer__button" type="submit">Send</button>
@@ -916,6 +916,28 @@ quest"
           <!-- /.footer__contact-form -->
         </div>
         <!-- /.footer-wrapper -->
+        <div class="footer__bottom">
+          <div class="footer__legal-info">
+            <ul class="footer__legal-list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Disclaimer</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Conditions of use</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Cancellation policy</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.footer__legal-info -->
+          <img
+            src="img/payment.png"
+            alt="Image: payment"
+            class="footer__payment"
+          />
+        </div>
+        <!-- /.footer__bottom -->
       </div>
       <!-- /.container -->
     </footer>
