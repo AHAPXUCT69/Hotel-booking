@@ -250,6 +250,8 @@
     width: 48%
     height: 255px
   .footer
+    &-wrapper
+      margin-bottom: 56px
     &__input
       width: 100px
       flex-basis: 48%
@@ -340,6 +342,7 @@
   .footer
     &-wrapper
       grid-template-columns: 1fr
+      margin-bottom: 30px
     &__logo
       grid-row: 1
       grid-column: 1
@@ -364,9 +367,15 @@
       &-form
         grid-row: 7
         grid-column: 1
+    &__button
+      &-wrapper
+        align-items: flex-start
+        flex-direction: column-reverse
     &__bottom
       flex-direction: column
       justify-content: center
+    &__info
+      margin-bottom: 15px
     &__legal
       &-info
         margin-bottom: 15px

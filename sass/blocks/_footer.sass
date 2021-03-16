@@ -102,9 +102,17 @@
     color: $light
     border-radius: 4px
     border: none
+    overflow: hidden
+    white-space: nowrap
+    text-overflow: ellipsis
     &:focus,
     &:active
       outline: none
+    &-wrapper
+      display: flex
+      justify-content: space-between
+      width: 100%
+      align-items: center
   &__info
     font-style: normal
     font-weight: bold
