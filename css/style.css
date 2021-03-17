@@ -388,11 +388,15 @@ template {
   font-size: 14px;
   line-height: 18px;
 }
+.navbar-menu__item--mobile--visible {
+  display: none;
+}
 
 .logo {
   width: 177px;
 }
-.logo img {
+.logo__image {
+  display: flex;
   width: 100%;
 }
 
@@ -413,6 +417,7 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #333333;
+  outline: none;
 }
 .search__button {
   position: absolute;
@@ -425,6 +430,9 @@ template {
   width: 65px;
   border: none;
   background-color: #EC1F46;
+}
+.search__button:focus, .search__button:active {
+  outline: none;
 }
 
 .user {
@@ -443,6 +451,10 @@ template {
   font-size: 14px;
   line-height: 18px;
   color: #333333;
+}
+
+.navbar__search--mobile--visible, .navbar__user--mobile--visible {
+  display: none;
 }
 
 .breadcrumb-list {
@@ -466,7 +478,6 @@ template {
 }
 
 .hotel {
-  padding-top: 22px;
   padding-bottom: 70px;
 }
 .hotel-info {
@@ -483,7 +494,7 @@ template {
   margin-top: 4px;
   margin-bottom: 0;
   font-size: 24px;
-  line-height: 30px;
+  line-height: 28px;
 }
 .hotel-info__description {
   margin-top: 1px;
@@ -605,7 +616,7 @@ template {
 .booking {
   width: 350px;
   min-height: 210px;
-  padding: 28px;
+  padding: 31px 21px 26px 22px;
   font-family: Nunito;
   background-color: #0A223D;
   color: #ffffff;
@@ -686,6 +697,9 @@ template {
   border: none;
   color: #ffffff;
   cursor: pointer;
+}
+.booking__button:focus, .booking__button:active {
+  outline: none;
 }
 
 .map {
@@ -1242,6 +1256,9 @@ template {
   border: none;
   resize: none;
 }
+.footer__message:focus, .footer__message:active {
+  outline: none;
+}
 .footer__button {
   min-width: 160px;
   min-height: 50px;
@@ -1340,8 +1357,8 @@ template {
   }
 
   .navbar-top {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 28px;
+    padding-bottom: 28px;
   }
   .navbar__search {
     margin-left: auto;
@@ -1446,13 +1463,67 @@ template {
   }
 }
 @media (max-width: 768px) {
+  body {
+    padding-top: 78px;
+  }
+
   .container {
     max-width: 576px;
     width: 92%;
   }
 
-  .navbar__search, .navbar-menu, .navbar__user {
+  .navbar-top {
+    padding-top: 33px;
+  }
+  .navbar--mobile--fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 99;
+  }
+  .navbar__search--mobile--hidden, .navbar__user--mobile--hidden {
     display: none;
+  }
+  .navbar__search--mobile--visible, .navbar__user--mobile--visible {
+    display: flex;
+    margin-bottom: 13px;
+  }
+  .navbar__user {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .navbar-bottom {
+    display: none;
+    position: fixed;
+    top: 75px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 30px;
+  }
+  .navbar-bottom--visible {
+    display: block;
+  }
+  .navbar-menu {
+    flex-direction: column;
+    padding-top: 4px;
+  }
+  .navbar-menu__item {
+    margin-bottom: 17px;
+  }
+  .navbar-menu__item:first-child {
+    margin-bottom: 11px;
+  }
+  .navbar-menu__item:nth-child(2) {
+    margin-bottom: 23px;
+  }
+  .navbar-menu__item--mobile--visible {
+    display: block;
+  }
+
+  .search__input {
+    width: auto;
   }
 
   .menu-button {
@@ -1467,14 +1538,26 @@ template {
     background-color: #ffffff;
     cursor: pointer;
   }
+  .menu-button:focus, .menu-button:active {
+    outline: none;
+  }
   .menu-button__line {
     width: 16px;
     height: 1px;
     background-color: #333333;
   }
 
+  .user__name--light {
+    color: #ffffff;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
   .stars {
     flex-basis: auto;
+  }
+  .stars--mr-15 {
+    margin-right: 15px;
   }
 
   .hotel {
@@ -1667,11 +1750,22 @@ template {
     width: 88%;
   }
 
+  .logo__image {
+    width: 99px;
+    height: 14px;
+  }
+
   .hotel-slider {
-    height: 250px;
+    height: 179px;
   }
   .hotel__slider {
     margin-bottom: 20px;
+  }
+  .hotel-info {
+    padding-bottom: 30px;
+  }
+  .hotel-right {
+    min-height: 404px;
   }
 
   .packages-wrapper {
@@ -1718,6 +1812,13 @@ template {
   }
   .package__button {
     padding: 10px 26px;
+  }
+
+  .map {
+    height: 173px;
+  }
+  .map__iframe {
+    height: 173px;
   }
 
   .newsletter {

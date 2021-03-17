@@ -27,9 +27,14 @@
       text-transform: uppercase
       font-size: 14px
       line-height: 18px
+    &__item
+      &--mobile
+        &--visible
+          display: none
 .logo
   width: 177px
-  img
+  &__image
+    display: flex
     width: 100%
 .search
   position: relative
@@ -47,6 +52,7 @@
     font-size: 12px
     line-height: 15px
     color: $text-color
+    outline: none
   &__button
     position: absolute
     top: 0
@@ -58,6 +64,9 @@
     width: 65px
     border: none
     background-color: #EC1F46
+    &:focus,
+    &:active
+      outline: none
 .user
   display: flex
   align-items: center
@@ -72,3 +81,8 @@
     font-size: 14px
     line-height: 18px
     color: $text-color
+.navbar
+  &__search, &__user
+    &--mobile
+      &--visible
+        display: none

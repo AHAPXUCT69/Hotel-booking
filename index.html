@@ -18,7 +18,7 @@
     <title>Best Tour Plan - Hotel Booking</title>
   </head>
   <body>
-    <header class="navbar">
+    <header class="navbar navbar--mobile--fixed">
       <div class="container">
         <div class="navbar-top">
           <a href="#" class="logo"
@@ -28,7 +28,10 @@
               class="logo__image"
           /></a>
 
-          <form action="#" class="search navbar__search">
+          <form
+            action="#"
+            class="search navbar__search navbar__search--mobile--hidden"
+          >
             <input
               class="search__input"
               type="search"
@@ -39,7 +42,7 @@
             </button>
           </form>
 
-          <a class="user navbar__user" href="#">
+          <a class="user navbar__user navbar__user--mobile--hidden" href="#">
             <img
               src="img/user-avatar.jpg"
               alt="Avatar: Nathan"
@@ -60,6 +63,34 @@
       <nav class="navbar-bottom">
         <div class="container">
           <ul class="navbar-menu">
+            <li class="navbar-menu__item navbar-menu__item--mobile--visible">
+              <a
+                class="user navbar__user navbar__user--mobile--visible"
+                href="#"
+              >
+                <img
+                  src="img/user-avatar.jpg"
+                  alt="Avatar: Nathan"
+                  class="user__avatar"
+                />
+                <span class="user__name user__name--light">Nathan</span>
+              </a>
+            </li>
+            <li class="navbar-menu__item navbar-menu__item--mobile--visible">
+              <form
+                action="#"
+                class="search navbar__search navbar__search--mobile--visible"
+              >
+                <input
+                  class="search__input"
+                  type="search"
+                  placeholder="Search Location"
+                />
+                <button class="search__button" type="submit">
+                  <img src="img/search.svg" alt="Icon: Search" />
+                </button>
+              </form>
+            </li>
             <li class="navbar-menu__item">
               <a href="#" class="navbar-menu__link">All Deals</a>
             </li>
@@ -107,7 +138,7 @@
         <div class="hotel-info">
           <div class="hotel-info__text">
             <div class="hotel-wrapper">
-              <div class="stars">
+              <div class="stars stars--mr-15">
                 <img class="stars__item" src="img/star.svg" alt="star" />
                 <img class="stars__item" src="img/star.svg" alt="star" />
                 <img class="stars__item" src="img/star.svg" alt="star" />
@@ -876,7 +907,7 @@ quest"
                 </div>
                 <p class="footer__text footer__text--tel">
                   Tel (business hours) :
-                  <a class="footer__link" href="tel:269 1500">269 1500</a><br />
+                  <a class="footer__link" href="tel:269&nbsp;1500">269 1500</a><br />
                   Tel (hotline) Monday - Saturday:
                   <a class="footer__link" href="tel:52-56-61-38">52-56-61-38</a>
                   (08:00 am – 20:00 pm)<br />Tel (hotline) Sunday:

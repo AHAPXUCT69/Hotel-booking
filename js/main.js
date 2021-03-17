@@ -45,3 +45,11 @@ $('.newsletter').parallax({
   naturalHeight: 1913,
   speed: 0.4,
 });
+
+// Menu Button
+
+var menuButton = document.querySelector('.menu-button');
+menuButton.addEventListener('click', function () {
+  console.log('Клик по кнопке Меню!');
+  document.querySelector('.navbar-bottom').classList.toggle('navbar-bottom--visible')
+})
