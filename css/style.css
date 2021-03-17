@@ -1504,6 +1504,7 @@ template {
   }
   .navbar-bottom--visible {
     display: block;
+    overflow: auto;
   }
   .navbar-menu {
     flex-direction: column;
