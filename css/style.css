@@ -457,6 +457,9 @@ template {
   display: none;
 }
 
+.breadcrumb {
+  padding-bottom: 22px;
+}
 .breadcrumb-list {
   display: flex;
   align-items: center;
@@ -860,8 +863,9 @@ template {
 }
 
 .newsletter {
+  max-height: 260px;
   position: relative;
-  padding: 98px 0 87px 0;
+  padding: 79px 0 87px 0;
 }
 .newsletter::before {
   content: "";
@@ -938,13 +942,13 @@ template {
 }
 
 .reviews {
-  padding: 40px 0 70px 0;
+  padding: 10px 0 70px 0;
 }
 .reviews-title {
   font-style: normal;
   font-weight: bold;
-  font-size: 30px;
-  line-height: 38px;
+  font-size: 36px;
+  line-height: 45px;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 70px;
