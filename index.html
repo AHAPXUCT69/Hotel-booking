@@ -583,11 +583,16 @@
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
 
-        <form action="#" class="subscribe newsletter__subscribe">
+        <form
+          action="send.php"
+          method="POST"
+          class="subscribe newsletter__subscribe"
+        >
           <input
             class="subscribe__input"
             type="text"
             placeholder="Your email address"
+            name="email"
           />
           <button class="subscribe__button" type="submit">Send</button>
         </form>
@@ -907,7 +912,8 @@ quest"
                 </div>
                 <p class="footer__text footer__text--tel">
                   Tel (business hours) :
-                  <a class="footer__link" href="tel:269&nbsp;1500">269 1500</a><br />
+                  <a class="footer__link" href="tel:269&nbsp;1500">269 1500</a
+                  ><br />
                   Tel (hotline) Monday - Saturday:
                   <a class="footer__link" href="tel:52-56-61-38">52-56-61-38</a>
                   (08:00 am – 20:00 pm)<br />Tel (hotline) Sunday:
@@ -932,22 +938,25 @@ quest"
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-            <div class="footer__form">
+            <form class="footer__form" action="send.php" method="POST">
               <input
                 type="text"
                 class="input footer__input"
                 placeholder="Your Full Name*"
+                name="name"
               />
               <input
                 type="text"
                 class="input footer__input"
                 placeholder="Phone Number*"
+                name="phone"
               />
               <textarea
                 class="footer__message"
                 cols="20"
                 rows="6"
                 placeholder="Message"
+                name="message"
               ></textarea>
               <div class="footer__button-wrapper">
                 <button class="button footer__button" type="submit">
@@ -956,7 +965,7 @@ quest"
                 <span class="footer__info">* Required Fields</span>
               </div>
               <!-- /.footer__button-wrapper -->
-            </div>
+            </form>
             <!-- /.footer__form -->
           </div>
           <!-- /.footer__contact-form -->
