@@ -3,7 +3,6 @@
 require 'phpmailer/PHPMailer.php';
 require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
-require 'mpw.php';
 
 // Переменные, которые отправляет пользователь
 $name = $_POST['name'];
@@ -40,7 +39,7 @@ try {
     // Настройки вашей почты
     $mail->Host       = 'smtp.jino.ru'; // SMTP сервера вашей почты
     $mail->Username   = 'message@slastenin.website'; // Логин на почте
-    $mail->Password   = $mpw; // Пароль на почте
+    $mail->Password   = 'Msg@s!ws'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
     $mail->setFrom('message@slastenin.website', 'Сластенин Николай'); // Адрес самой почты и имя отправителя
