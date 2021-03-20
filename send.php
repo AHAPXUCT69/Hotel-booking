@@ -7,6 +7,7 @@ require 'phpmailer/Exception.php';
 // Переменные, которые отправляет пользователь
 $name = $_POST['name'];
 $phone = $_POST['phone'];
+$mail = $_POST['mail'];
 $message = $_POST['message'];
 $email = $_POST['email'];
 
@@ -14,7 +15,7 @@ $email = $_POST['email'];
 if(isset($_POST['email'])){
     $title = "Новая заявка Best Tour Plan";
     $body = "
-    <h2>Новое заявка на рассылку</h2>
+    <h2>Новая заявка на рассылку</h2>
     <b>Адрес электронной почты:</b> $email<br>
     ";
 } else {
@@ -22,7 +23,8 @@ if(isset($_POST['email'])){
     $body = "
     <h2>Новое обращение</h2>
     <b>Имя:</b> $name<br>
-    <b>Телефон:</b> $phone<br><br>
+    <b>Телефон:</b> $phone<br>
+    <b>Почта:</b> $mail<br><br>
     <b>Сообщение:</b><br>$message
     ";
 }
@@ -39,7 +41,7 @@ try {
     // Настройки вашей почты
     $mail->Host       = 'smtp.jino.ru'; // SMTP сервера вашей почты
     $mail->Username   = 'message@slastenin.website'; // Логин на почте
-    $mail->Password   = 'Msg@s!ws'; // Пароль на почте
+    $mail->Password   = 'Mes@s!ws'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
     $mail->setFrom('message@slastenin.website', 'Сластенин Николай'); // Адрес самой почты и имя отправителя
