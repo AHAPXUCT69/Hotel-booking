@@ -109,6 +109,17 @@
     &__input
       flex-basis: 48%
       width: 100px
+  .modal
+    &__button
+      &-wrapper
+        flex-direction: column
+    &__info
+      margin: 15px 0 0 0
+    &__dialog
+      padding: 33px 60px
+      min-width: 400px
+    &__form
+      margin: auto
 @media (max-width: 768px)
   .container
     max-width: 700px
@@ -552,6 +563,14 @@
     &__payment
       top: 30px
       left: 0
+  .modal
+    &__dialog
+      min-width: 100%
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      transform: none
 @media (max-width: 476px)
   .packages
     &-wrapper
@@ -565,3 +584,10 @@
       margin-bottom: 16px
       &--lg
         margin-bottom: 15px
+  .modal
+    &__dialog
+      padding: 33px 30px
+@media (max-height: 520px)
+  .modal
+    &__dialog
+      height: 100%
