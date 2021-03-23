@@ -92,7 +92,7 @@ $('.phone').mask('+7(000)-000-00-00', {placeholder: "+7(___)-___-__-__"});
     messages: {
       name: {
         required:"Please specify your name",
-        minlength: "Your name must have at least 2 letters"
+        minlength: "Name must have at least 2 letters"
       },
       phone: {
         required: "We need your phone to contact you"
