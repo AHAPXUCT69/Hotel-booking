@@ -39,24 +39,29 @@ body
     color: $dark
     outline: none
 .button
-  min-width: 160px
-  min-height: 50px
-  padding: 18px 18px 17px 18px
-  font-style: normal
-  font-weight: bold
-  font-size: 12px
-  line-height: 15px
   background-color: $primary
   color: $light
   border-radius: 4px
+  outline: none
   border: none
   overflow: hidden
   white-space: nowrap
   text-overflow: ellipsis
   cursor: pointer
+  user-select: none
+  appearance: none
+  touch-action: manipulation
   &:focus,
+  &:hover
+    background-color: #9D293F
+  &:focus
+    box-shadow: 0 0 0 3px rgba(236, 31, 70, 0.5)
   &:active
+    background-color: #9D293F
     outline: none
+  &:disabled
+    pointer-events: none
+    opacity: 0.65
 .invalid
   position: relative
   color: $primary
