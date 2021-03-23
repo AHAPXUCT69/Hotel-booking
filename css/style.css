@@ -69,6 +69,21 @@ body {
   outline: none;
 }
 
+.invalid {
+  position: relative;
+  color: #EC1F46;
+}
+
+#email-error {
+  position: absolute;
+  top: 60px;
+}
+
+.phone {
+  font-size: 12px;
+  line-height: 15px;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -968,8 +983,6 @@ template {
   position: relative;
   width: 350px;
   height: 55px;
-  border-radius: 4px;
-  overflow: hidden;
 }
 .subscribe__input {
   position: absolute;
@@ -982,6 +995,10 @@ template {
   font-size: 14px;
   line-height: 18px;
   border: none;
+  border-radius: 4px;
+}
+.subscribe__input:focus, .subscribe__input:active {
+  outline: none;
 }
 .subscribe__button {
   position: absolute;
@@ -999,6 +1016,8 @@ template {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
 }
 .subscribe__button:focus, .subscribe__button:active {
   outline: none;
@@ -1308,6 +1327,9 @@ template {
   color: #ffffff;
 }
 .footer__input {
+  width: 100%;
+}
+.footer__input-group {
   flex-basis: 47%;
   margin-bottom: 15px;
 }
@@ -1469,12 +1491,12 @@ template {
 }
 .modal__input {
   width: 100%;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 .modal__message {
   width: 100%;
   max-height: 123px;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 .modal__info {
   margin-left: auto;
@@ -1494,6 +1516,9 @@ template {
   line-height: 23px;
   color: #ffffff;
   text-transform: uppercase;
+}
+.modal__button {
+  margin-top: 15px;
 }
 .modal__button-wrapper {
   display: flex;
@@ -1530,7 +1555,7 @@ template {
     font-size: 12px;
   }
 
-  .footer__input {
+  .footer__input-group {
     flex-basis: 49%;
   }
 }
@@ -1652,16 +1677,15 @@ template {
     grid-row: 3;
     grid-column: span 3;
   }
-  .footer__input {
-    flex-basis: 48%;
-    width: 100px;
+  .footer__input-group {
+    flex-basis: 100%;
   }
 
   .modal__button-wrapper {
     flex-direction: column-reverse;
   }
   .modal__info {
-    margin: 0 0 15px 0;
+    margin: 15px 0 0 0;
   }
   .modal__dialog {
     padding: 33px 60px;

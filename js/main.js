@@ -82,4 +82,32 @@ $(document).ready(function(){
           }
       });
 
+// Маска для телефонов
+$('.phone').mask('+7(000)-000-00-00', {placeholder: "+7(___)-___-__-__"});
+
+// Валидация форм
+  $('.form').each(function() {
+    $(this).validate({
+    errorClass: "invalid",
+    messages: {
+      name: {
+        required:"Please specify your name",
+        minlength: "Your name must have at least 2 letters"
+      },
+      phone: {
+        required: "We need your phone to contact you"
+      },
+      mail: {
+        required: "We need your email address to contact you",
+        email: "Your email address must be in the format of name@domain.com"
+      },
+      email: {
+        required: "We need your email address to send you newsletters",
+        email: "Your email address must be in the format of name@domain.com"
+      },
+  },
+
+  });
+  })
+
 });

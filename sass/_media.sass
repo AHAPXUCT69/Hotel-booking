@@ -20,7 +20,8 @@
       font-size: 12px
   .footer
     &__input
-      flex-basis: 49%
+      &-group
+        flex-basis: 49%
 @media (max-width: 992px)
   .container,
   .newsletter-wrapper
@@ -111,14 +112,14 @@
         grid-row: 3
         grid-column: span 3
     &__input
-      flex-basis: 48%
-      width: 100px
+      &-group
+        flex-basis: 100%
   .modal
     &__button
       &-wrapper
         flex-direction: column-reverse
     &__info
-      margin: 0 0 15px 0
+      margin: 15px 0 0 0
     &__dialog
       padding: 33px 60px
       min-width: 400px
