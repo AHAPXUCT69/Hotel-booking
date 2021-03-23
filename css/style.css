@@ -1811,6 +1811,10 @@ template {
   }
 }
 @media (max-width: 748px) {
+  .container {
+    max-width: 600px;
+  }
+
   .search__input {
     width: auto;
   }
