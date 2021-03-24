@@ -18,6 +18,15 @@
   .package
     &__description
       font-size: 12px
+    &__image
+      &--lg
+        width: 290px
+    &__information
+      &--lg
+        padding: 40px 21px 30px 40px
+    &__features
+      &--lg
+        margin-bottom: 65px
   .footer
     &__input
       &-group
@@ -64,9 +73,15 @@
       grid-template-rows: 500px 1fr 1fr
       grid-template-columns: 1fr 1fr
   .package
+    &__image
+      &--lg
+        width: 366px
+    &__information
+      &--lg
+        padding: 40px 21px 30px 60px
     &__features
       &--lg
-        margin-bottom: 50px
+        margin-bottom: 65px
   .reviews
     &-slider
       &__item
@@ -119,7 +134,7 @@
       &-wrapper
         flex-direction: column-reverse
     &__info
-      margin: 15px 0 0 0
+      margin: 0 0 15px 0
     &__dialog
       padding: 33px 60px
       min-width: 400px
@@ -138,6 +153,9 @@
       max-width: 673px
       margin: auto
   .booking
+    padding: 30px 23px 15px 24px
+    &__info
+      margin-bottom: 11px
     &__text
       min-width: 80px
     &__pricetag
@@ -149,11 +167,18 @@
   .newsletter
     &__title
       margin-top: 11px
-  .reviews__title
-    margin-top: 28px
-    margin-bottom: 50px
-    font-size: 30px
-    line-height: 38px
+  .reviews
+    &__title
+      margin-top: 28px
+      margin-bottom: 50px
+      font-size: 30px
+      line-height: 38px
+    &-slider
+      &__button
+        &--next
+          right: 0
+        &--prev
+          left: 0
   .activities
     padding-top: 51px
     padding-bottom: 49px

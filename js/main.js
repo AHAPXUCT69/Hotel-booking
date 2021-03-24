@@ -83,7 +83,7 @@ $(document).ready(function(){
       });
 
 // Маска для телефонов
-$('.phone').mask('+7(000)-000-00-00', {placeholder: "+7(___)-___-__-__"});
+$('.phone').mask('+7(000)-000-00-00');
 
 // Валидация форм
   $('.form').each(function() {
@@ -95,6 +95,7 @@ $('.phone').mask('+7(000)-000-00-00', {placeholder: "+7(___)-___-__-__"});
         minlength: "Name must have at least 2 letters"
       },
       phone: {
+        minlength: jQuery.validator.format("Please enter your full phone number"),
         required: "We need your phone to contact you"
       },
       mail: {

@@ -890,6 +890,7 @@ template {
   border-radius: 0 0 8px 8px;
 }
 .package__information--lg {
+  border-radius: 0 8px 8px 0;
   padding: 40px 21px 30px 60px;
 }
 .package__rating {
@@ -1526,14 +1527,40 @@ template {
 .modal__input {
   width: 100%;
   margin-top: 15px;
+  color: #333333;
 }
 .modal__input:first-child {
   margin-top: 0;
+}
+.modal__input::-webkit-input-placeholder {
+  color: #BDBDBD;
+}
+.modal__input::-moz-placeholder {
+  color: #BDBDBD;
+}
+.modal__input:-moz-placeholder {
+  color: #BDBDBD;
+}
+.modal__input:-ms-input-placeholder {
+  color: #BDBDBD;
 }
 .modal__message {
   width: 100%;
   max-height: 123px;
   margin-top: 15px;
+  color: #333333;
+}
+.modal__message::-webkit-input-placeholder {
+  color: #BDBDBD;
+}
+.modal__message::-moz-placeholder {
+  color: #BDBDBD;
+}
+.modal__message:-moz-placeholder {
+  color: #BDBDBD;
+}
+.modal__message:-ms-input-placeholder {
+  color: #BDBDBD;
 }
 .modal__info {
   margin-left: auto;
@@ -1596,6 +1623,15 @@ template {
 
   .package__description {
     font-size: 12px;
+  }
+  .package__image--lg {
+    width: 290px;
+  }
+  .package__information--lg {
+    padding: 40px 21px 30px 40px;
+  }
+  .package__features--lg {
+    margin-bottom: 65px;
   }
 
   .footer__input-group {
@@ -1662,8 +1698,14 @@ template {
     grid-template-columns: 1fr 1fr;
   }
 
+  .package__image--lg {
+    width: 366px;
+  }
+  .package__information--lg {
+    padding: 40px 21px 30px 60px;
+  }
   .package__features--lg {
-    margin-bottom: 50px;
+    margin-bottom: 65px;
   }
 
   .reviews-slider__item {
@@ -1728,7 +1770,7 @@ template {
     flex-direction: column-reverse;
   }
   .modal__info {
-    margin: 15px 0 0 0;
+    margin: 0 0 15px 0;
   }
   .modal__dialog {
     padding: 33px 60px;
@@ -1755,6 +1797,12 @@ template {
     margin: auto;
   }
 
+  .booking {
+    padding: 30px 23px 15px 24px;
+  }
+  .booking__info {
+    margin-bottom: 11px;
+  }
   .booking__text {
     min-width: 80px;
   }
@@ -1776,6 +1824,12 @@ template {
     margin-bottom: 50px;
     font-size: 30px;
     line-height: 38px;
+  }
+  .reviews-slider__button--next {
+    right: 0;
+  }
+  .reviews-slider__button--prev {
+    left: 0;
   }
 
   .activities {
