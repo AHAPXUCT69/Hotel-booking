@@ -27,8 +27,6 @@
       text-transform: uppercase
       font-size: 14px
       line-height: 18px
-      &:hover
-        border-bottom: 1px solid $light
     &__item
       &--mobile
         &--visible
@@ -88,12 +86,8 @@
       background: $dark
       transition: opacity 0.3s ease
       z-index: 9
-    &:hover
-      &::after
-        opacity: 0.3
-    &:active, &:focus
-      outline: none
-      box-shadow: 0 0 0 3px rgba(236, 31, 70, 0.5)
+      &:active, &:focus
+        outline: none
     &:disabled
       pointer-events: none
       opacity: 0.65
@@ -107,5 +101,3 @@
     font-size: 14px
     line-height: 18px
     color: $text-color
-    &:hover
-      border-bottom: 1px solid $dark
