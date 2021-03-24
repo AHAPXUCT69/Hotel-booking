@@ -1353,11 +1353,24 @@ template {
   color: #ffffff;
 }
 .footer__input {
+  color: #333333;
   width: 100%;
 }
 .footer__input-group {
   flex-basis: 47%;
   margin-bottom: 15px;
+}
+.footer__input-group::-webkit-input-placeholder {
+  color: #BDBDBD;
+}
+.footer__input::-moz-placeholder {
+  color: #BDBDBD;
+}
+.footer__input:-moz-placeholder {
+  color: #BDBDBD;
+}
+.footer__input:-ms-input-placeholder {
+  color: #BDBDBD;
 }
 .footer__message {
   flex-basis: 100%;
@@ -1368,7 +1381,7 @@ template {
   font-size: 12px;
   line-height: 15px;
   background-color: #ffffff;
-  color: #BDBDBD;
+  color: #333333;
   border-radius: 4px;
   border: none;
   resize: none;
@@ -1376,6 +1389,18 @@ template {
 .footer__message:focus, .footer__message:active {
   color: #0A223D;
   outline: none;
+}
+.footer__message:focus::-webkit-input-placeholder, .footer__message:active::-webkit-input-placeholder {
+  color: #BDBDBD;
+}
+.footer__message::-moz-placeholder {
+  color: #BDBDBD;
+}
+.footer__message:-moz-placeholder {
+  color: #BDBDBD;
+}
+.footer__message:-ms-input-placeholder {
+  color: #BDBDBD;
 }
 .footer__button {
   max-width: 160px;
