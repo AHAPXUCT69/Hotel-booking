@@ -92,6 +92,20 @@ body {
   line-height: 15px;
 }
 
+@keyframes bounce {
+  0%, 20%, 60%, 100% {
+    transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  80% {
+    transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -467,6 +481,9 @@ template {
   font-size: 14px;
   line-height: 18px;
 }
+.navbar-menu__link:hover {
+  border-bottom: 1px solid #ffffff;
+}
 .navbar-menu__item--mobile--visible {
   display: none;
 }
@@ -558,6 +575,9 @@ template {
   font-size: 14px;
   line-height: 18px;
   color: #333333;
+}
+.user__name:hover {
+  border-bottom: 1px solid #0A223D;
 }
 
 .breadcrumb {
@@ -1351,6 +1371,15 @@ template {
 }
 .footer__link:hover {
   color: #ffffff;
+}
+.footer__link:hover img {
+  animation: bounce 1s;
+}
+.footer__link:focus, .footer__link:active {
+  outline: none;
+}
+.footer__link--bottom:hover {
+  border-bottom: 1px solid #ffffff;
 }
 .footer__input {
   color: #333333;
