@@ -74,26 +74,15 @@
     height: 40px
     border-radius: 50%
     overflow: hidden
-    &::after
-      position: absolute
-      display: block
-      content: ''
-      top: 0
-      bottom: 0
-      left: 0
-      right: 0
-      opacity: 0
-      background: $dark
-      transition: opacity 0.3s ease
-      z-index: 9
-      &:active, &:focus
-        outline: none
+    border: 1px solid transparent
+    &:active, &:focus
+      outline: none
     &:disabled
       pointer-events: none
       opacity: 0.65
   &__avatar
-    width: 40px
-    height: 40px
+    width: 39px
+    height: 39px
     border-radius: 50%
     object-fit: cover
   &__name
