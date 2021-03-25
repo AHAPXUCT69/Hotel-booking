@@ -41,7 +41,7 @@ try {
     // Настройки вашей почты
     $mail->Host       = 'smtp.jino.ru'; // SMTP сервера вашей почты
     $mail->Username   = 'message@slastenin.website'; // Логин на почте
-    $mail->Password   = 'Mes@s!ws'; // Пароль на почте
+    $mail->Password   = 'Mess@sws!'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
     $mail->setFrom('message@slastenin.website', 'Сластенин Николай'); // Адрес самой почты и имя отправителя
