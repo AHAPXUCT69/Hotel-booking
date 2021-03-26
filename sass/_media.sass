@@ -196,9 +196,12 @@
       grid-row-gap: 46px
       grid-column-gap: 5px
     &__wrapper
-      margin-bottom: 65px
+      margin-bottom: 60px
+    &__ul
+      padding: 0
     &__logo
       grid-column: 1/2
+      margin-top: 0
       &-image
         width: 99px
         height: 110px
@@ -213,13 +216,17 @@
         grid-row: 4
         grid-column: span 5
         width: 90%
+    &__legal
+      justify-self: start
     &__title
       &--mb-3
         margin-top: 13px
         margin-bottom: 26px
       &--mt-0
         margin-top: -9px
-        margin-bottom: 35px
+        margin-bottom: 32px
+      &--inline
+        margin: 0 43px 0 0px
     &__input
       &-group
         flex-basis: 47%
@@ -229,6 +236,7 @@
     &__icon
       &-wrapper
         padding-left: 9px
+        padding-top: 3px
         min-width: 44px
     &__item
       &--mb-2
@@ -613,11 +621,12 @@
       grid-column: 1
     &__title
       &--inline
-        margin-top: 0
+        margin-top: -2px
         margin-bottom: 20px
       &--mb-3
         margin-top: 9px
       &--mt-0
+        margin-top: 5px
         margin-bottom: 16px
     &__social
       &-network

@@ -42,7 +42,10 @@
             </button>
           </form>
 
-          <a class="user navbar__user navbar__user--mobile--hidden" href="#">
+          <a
+            class="user navbar__user navbar__user--mobile--hidden"
+            href="#"
+          >
             <div class="user__wrapper">
               <img
                 src="img/user-avatar.jpg"
@@ -53,7 +56,7 @@
             <span class="user__name">Nathan</span>
           </a>
           <!-- /.user -->
-          <button class="menu-button navbar-top__menu-button">
+          <button class="menu-button navbar-top__menu-button" type="button">
             <span class="menu-button__line"></span
             ><span class="menu-button__line"></span
             ><span class="menu-button__line"></span>
@@ -94,25 +97,35 @@
               </form>
             </li>
             <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">All Deals</a>
+              <a href="#" class="navbar-menu__link"
+                >All Deals</a
+              >
             </li>
             <li class="navbar-menu__item">
               <a href="#" class="navbar-menu__link">Hotels</a>
             </li>
             <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Activities</a>
+              <a href="#" class="navbar-menu__link"
+                >Activities</a
+              >
             </li>
             <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Hotel Day Packages</a>
+              <a href="#" class="navbar-menu__link"
+                >Hotel Day Packages</a
+              >
             </li>
             <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Restaurants</a>
+              <a href="#" class="navbar-menu__link"
+                >Restaurants</a
+              >
             </li>
             <li class="navbar-menu__item">
               <a href="#" class="navbar-menu__link">Events</a>
             </li>
             <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Rodrigues</a>
+              <a href="#" class="navbar-menu__link"
+                >Rodrigues</a
+              >
             </li>
           </ul>
         </div>
@@ -251,13 +264,13 @@
               <!-- /.booking-info -->
               <div class="booking__call-center">
                 <span class="booking__heading">Quick Booking</span>
-                <a class="booking__number" href="tel:12100">
+                <a class="booking__number" href="tel:12100" target="_blank">
                   <img src="img/phone-call.svg" alt="Icon: phone-call" />
                   <span class="booking__num">12100</span>
                 </a>
               </div>
               <!-- /.booking__call-center -->
-              <button data-toggle="modal" class="button booking__button">
+              <button data-toggle="modal" class="button booking__button" type="button">
                 View Other Options
               </button>
             </div>
@@ -289,11 +302,6 @@
           <div class="package package--lg">
             <div class="package__photo package__photo--lg">
               <span class="package__label package__label--lg">Flash Offer</span>
-              <!-- <img
-                class="package__image package__image--lg"
-                src="img/package-image.jpg"
-                alt="Image: hotel"
-              /> -->
             </div>
             <!-- /.package__photo -->
             <div class="package__information package__information--lg">
@@ -351,7 +359,7 @@
                 <span class="package__price package__price--lg">$ 8,500</span>
                 <button
                   class="package__button package__button--lg button"
-                  data-toggle="modal"
+                  data-toggle="modal" type="button"
                 >
                   Book Now
                 </button>
@@ -408,7 +416,7 @@
               <!-- /.package__old-price -->
               <div class="package__booking">
                 <span class="package__price">$ 3,000</span>
-                <button class="package__button button" data-toggle="modal">
+                <button class="package__button button" data-toggle="modal" type="button">
                   Book Now
                 </button>
               </div>
@@ -464,7 +472,7 @@
               <!-- /.package__old-price -->
               <div class="package__booking">
                 <span class="package__price">$ 9,500</span>
-                <button class="package__button button" data-toggle="modal">
+                <button class="package__button button" data-toggle="modal" type="button">
                   Book Now
                 </button>
               </div>
@@ -520,7 +528,7 @@
               <!-- /.package__old-price -->
               <div class="package__booking">
                 <span class="package__price">$ 2,500</span>
-                <button class="package__button button" data-toggle="modal">
+                <button class="package__button button" data-toggle="modal" type="button">
                   Book Now
                 </button>
               </div>
@@ -576,7 +584,7 @@
               <!-- /.package__old-price -->
               <div class="package__booking">
                 <span class="package__price">$ 3,500</span>
-                <button class="package__button button" data-toggle="modal">
+                <button class="package__button button" data-toggle="modal" type="button">
                   Book Now
                 </button>
               </div>
@@ -631,9 +639,7 @@
 
     <section class="reviews">
       <div class="container">
-        <h2 class="reviews-title reviews__title">
-          What people thinks about us
-        </h2>
+        <h2 class="reviews-title reviews__title">What people think about us</h2>
 
         <div class="swiper-container reviews-slider">
           <div class="swiper-wrapper">
@@ -773,7 +779,7 @@ of chamarel"
             <h3 class="card__title card__title--small">
               The curious corner of chamarel
             </h3>
-            <button class="card__button button" data-toggle="modal">
+            <button class="card__button button" data-toggle="modal" type="button">
               Book Now
             </button>
           </div>
@@ -792,7 +798,7 @@ course"
             />
             <h3 class="card__title">Gymkhana club golf course</h3>
             <!-- /.card__title -->
-            <button class="card__button button" data-toggle="modal">
+            <button class="card__button button" data-toggle="modal" type="button">
               Book Now
             </button>
             <!-- /.card__button -->
@@ -815,7 +821,7 @@ trip - full day
               Tamarind falls hiking trip - full day
             </h3>
             <!-- /.card__title -->
-            <button class="card__button button" data-toggle="modal">
+            <button class="card__button button" data-toggle="modal" type="button">
               Book Now
             </button>
             <!-- /.card__button -->
@@ -835,7 +841,7 @@ quest"
             />
             <h3 class="card__title">The blue marine discovery quest</h3>
             <!-- /.card__title -->
-            <button class="card__button button" data-toggle="modal">
+            <button class="card__button button" data-toggle="modal" type="button">
               Book Now
             </button>
             <!-- /.card__button -->
@@ -869,10 +875,14 @@ quest"
                 <a href="#" class="footer__link">Activities </a>
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Spa Packages</a>
+                <a href="#" class="footer__link"
+                  >Spa Packages</a
+                >
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Hotel Day Packages</a>
+                <a href="#" class="footer__link"
+                  >Hotel Day Packages</a
+                >
               </li>
               <li class="footer__item">
                 <a href="#" class="footer__link">Restaurants</a>
@@ -896,13 +906,19 @@ quest"
                 <a href="#" class="footer__link">Contact Us</a>
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">How does it work?</a>
+                <a href="#" class="footer__link"
+                  >How does it work?</a
+                >
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Frequently Asked Questions</a>
+                <a href="#" class="footer__link"
+                  >Frequently Asked Questions</a
+                >
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Deals.mu loyalty program</a>
+                <a href="#" class="footer__link"
+                  >Deals.mu loyalty program</a
+                >
               </li>
               <li class="footer__item">
                 <a href="#" class="footer__link"
@@ -916,21 +932,22 @@ quest"
             <h3 class="footer__title footer__title--inline">Social Network</h3>
             <div class="footer__social-links">
               <a
-                rel="nofollow"
+                rel="nofollow noopener noreferrer"
                 href="https://facebook.com/"
                 class="footer__link"
+                target="_blank"
                 ><img src="img/fb.svg" alt="Icon: facebook"
               /></a>
               <a
-                rel="nofollow"
+                rel="nofollow noopener noreferrer"
                 href="https://www.youtube.com/"
-                class="footer__link"
+                class="footer__link" target="_blank"
                 ><img src="img/yt.svg" alt="Icon: youtube"
               /></a>
               <a
-                rel="nofollow"
+                rel="nofollow noopener noreferrer"
                 href="https://www.instagram.com/"
-                class="footer__link"
+                class="footer__link" target="_blank"
                 ><img src="img/inst.svg" alt="Icon: instagram"
               /></a>
             </div>
@@ -941,7 +958,7 @@ quest"
             <h3 class="footer__title">LEGAL INFORMATION</h3>
             <ul class="footer__ul">
               <li class="footer__item">
-                <a href="#" class="footer__link">Terms & Conditions</a>
+                <a href="#" class="footer__link"></a>Terms & Conditions</a>
               </li>
               <li class="footer__item">
                 <a href="#" class="footer__link">Disclaimer</a>
@@ -982,12 +999,11 @@ quest"
                 </div>
                 <p class="footer__text footer__text--tel">
                   Tel (business hours) :
-                  <a class="footer__link" href="tel:269&nbsp;1500">269 1500</a
-                  ><br />
+                  <a class="footer__link" href="tel:2691500" target="_blank">269 1500</a><br />
                   Tel (hotline) Monday - Saturday:
-                  <a class="footer__link" href="tel:52-56-61-38">52-56-61-38</a>
+                  <a class="footer__link" href="tel:52-56-61-38" target="_blank">52-56-61-38</a>
                   (08:00 am – 20:00 pm)<br />Tel (hotline) Sunday:
-                  <a class="footer__link" href="tel:52-56-61-38">52-56-61-38</a>
+                  <a class="footer__link" href="tel:52-56-61-38" target="_blank">52-56-61-38</a>
                   (08:00 am – 14:00 pm)
                 </p>
               </li>
@@ -999,7 +1015,7 @@ quest"
                     class="footer__icon"
                   />
                 </div>
-                <a class="footer__link" href="mailto:cherly.lawson@example.com"
+                <a class="footer__link" href="mailto:cherly.lawson@example.com" target="_blank"
                   >cherly.lawson@example.com</a
                 >
               </li>
@@ -1007,7 +1023,7 @@ quest"
           </div>
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
-            <h3 class="footer__title footer__title--mb-3 footer__title--mt-0">
+            <h3 class="footer__title footer__title--mt-0">
               Send us a message
             </h3>
             <form class="footer__form form" action="send.php" method="POST">
