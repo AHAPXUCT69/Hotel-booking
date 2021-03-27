@@ -95,16 +95,16 @@ $('.phone').mask('+7(000)-000-00-00');
         minlength: "Name must have at least 2 letters"
       },
       phone: {
-        minlength: jQuery.validator.format("Please enter your full phone number"),
-        required: "We need your phone to contact you"
+        minlength: jQuery.validator.format("Enter your full phone number"),
+        required: "We need your phone"
       },
       mail: {
         required: "We need your email address to contact you",
-        email: "Your email address must be in the format of name@domain.com"
+        email: "Wrong email"
       },
       email: {
-        required: "We need your email address to send you newsletters",
-        email: "Your email address must be in the format of name@domain.com"
+        required: "We need your email address",
+        email: "Wrong email"
       },
   },
 
